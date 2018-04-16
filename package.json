@@ -1,0 +1,34 @@
+{
+  "name": "pizza-lab",
+  "version": "1.0.0",
+  "description": "Pizza lab!",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "debugger": "DEBUG=*:* npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/nyc-wdi-ada/LAB_U02_D07_Pizza-Views.git"
+  },
+  "keywords": [
+    "express",
+    "views",
+    "pizza"
+  ],
+  "author": "jlr",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "jest": "^18.0.0",
+    "supertest": "^2.0.1",
+    "supertest-as-promised": "^4.0.2"
+  }
+}
