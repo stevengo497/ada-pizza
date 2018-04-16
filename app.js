@@ -22,12 +22,12 @@ app.use(express.static('public')) // added in order to read public files
 
 app.get('/pizza', (req, res) => {
 	console.log(pizza) // logs in terminal
-	const pizzaString = JSON.stringify(pizza);
-	res.render("index", {pizzaString});
+	res.render("index", {pizza:pizza});
 });
 
 app.get('/pizza/:id', (req, res) => {
-	let id = req.parmas.id
+	let id = req.params.id
+	// console.log(id) comes back as id #
 	const pizzaString = JSON.stringify(pizza);
 	res.render("index", {pizzaString});
 });

@@ -4,7 +4,12 @@
 	<title>Pizza</title>
 </head>
 <body>
-	<h1><%=pizzaString %> </h1>
+	<h1></h1>
+
+	<% for (let i=0; i < pizza.length; i++) { %>
+	<h2><%=pizza[i].flavor %></h2>
+<% } %>
+
 
 </body>
 </html>
