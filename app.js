@@ -28,8 +28,7 @@ app.get('/pizza', (req, res) => {
 app.get('/pizza/:id', (req, res) => {
 	let id = req.params.id
 	// console.log(id) comes back as id #
-	const pizzaString = JSON.stringify(pizza);
-	res.render("index", {pizzaString});
+	res.render("single/index", pizza[id-1]);
 });
 
 /* error handler */
